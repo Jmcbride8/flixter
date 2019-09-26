@@ -74,3 +74,13 @@ gem 'simple_form'
 
 #Gem for user signin and authentication
 gem 'devise'
+
+#gem for videos
+gem 'carrierwave', '~> 2.0'
+
+#gem for uploading pictures to AWS
+gem 'figaro'
+gem 'fog-aws'
+
+#gem for image resizing
+gem 'mini_magick'
