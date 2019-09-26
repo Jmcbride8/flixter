@@ -84,3 +84,6 @@ gem 'fog-aws'
 
 #gem for image resizing
 gem 'mini_magick'
+
+#gemfile adjustment for videos
+gem 'carrierwave-aws'
