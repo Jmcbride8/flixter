@@ -87,3 +87,10 @@ gem 'mini_magick'
 
 #gemfile adjustment for videos
 gem 'carrierwave-aws'
+
+#gemfiles for debugging
+gem 'pry-byebug'
+gem 'pry-rails'
+gem 'pry-stack_explorer'
+gem 'awesome_print'
+
