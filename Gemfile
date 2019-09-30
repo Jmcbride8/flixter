@@ -94,3 +94,5 @@ gem 'pry-rails'
 gem 'pry-stack_explorer'
 gem 'awesome_print'
 
+#gem for payments using the Stripe.com platform
+gem 'stripe'
