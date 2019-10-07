@@ -96,3 +96,9 @@ gem 'awesome_print'
 
 #gem for payments using the Stripe.com platform
 gem 'stripe'
+
+#gem for rank-sorting the data
+gem 'ranked-model'
+
+#gem for jquery UI
+gem 'jquery-ui-rails'

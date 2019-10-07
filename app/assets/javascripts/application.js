@@ -12,14 +12,18 @@
 //
 //= require rails-ujs
 //= require activestorage
-
+//= require jquery
+//= require jquery-ui
 //= require jquery_ujs
 //= require turbolinks
 //= require popper
 //= require tether
 //= require bootstrap-sprockets
+
+
 //= require_tree .
-//= require jquery
+
+
 
 // put a breakpoint in the page as soon as the page loads
 //$( document ).ready(function() {
@@ -27,3 +31,4 @@
 //    console.log( "ready!" );
 //debugger
 //});
+
