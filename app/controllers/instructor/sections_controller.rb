@@ -13,9 +13,9 @@ class Instructor::SectionsController < ApplicationController
   end
 
   def update
-    current_section.update_attributes(section_params)
+    current_course.update_attributes(course_params)
     render plain: 'updated!'
-  end 
+  end
 
   private
 
@@ -43,4 +43,6 @@ class Instructor::SectionsController < ApplicationController
   def section_params
     params.require(:section).permit(:title, :row_order_position)
   end
+
+
 end
