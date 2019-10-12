@@ -1,7 +1,6 @@
 class Instructor::SectionsController < ApplicationController
   before_action :authenticate_user!
-  before_action :require_authorized_for_current_course, only: [:create]
-  before_action :require_authorized_for_current_course, only: [:update]
+  before_action :require_authorized_for_current_course, only: [:create, :update]
 
 
   def create
@@ -10,7 +9,7 @@ class Instructor::SectionsController < ApplicationController
   end
 
   def update
-    current_course.update_attributes(course_params)
+    current_section.update_attributes(section_params)
     render plain: 'updated!'
   end
 
@@ -24,7 +23,7 @@ class Instructor::SectionsController < ApplicationController
 
 
   def current_section
-    @current_section ||= Section.find(params[:section_id])
+    @current_section ||= Section.find(params[:section_id] || params[:id])
   end
 
  helper_method :current_course
